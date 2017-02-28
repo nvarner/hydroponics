@@ -1,0 +1,78 @@
+/***************************************************
+* This section makes the content div work properly *
+***************************************************/
+html, body {
+	width: 100%;
+	min-height: 100%;
+	
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+* {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.centered {
+	text-align: center;
+	display: block;
+}
+
+a {
+	color: #010735;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*********
+* Header *
+*********/
+header {
+	border-bottom: 1px solid #000000;
+}
+
+header, .header-title {
+	margin: 0;
+	height: 15vh;
+}
+
+.header-title {
+	display: inline-block;
+	width: 25vw;
+	background-color: #000000;
+	color: #ffffff;
+	letter-spacing: 1.5vw;
+	line-height: 15vh;
+	padding: 0;
+}
+
+#navigation {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	padding: 0;
+	width: 74vw;
+}
+
+#navigation > li {
+	display: inline-block;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}

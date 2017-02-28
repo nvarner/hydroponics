@@ -1,0 +1,178 @@
+{
+	"symptoms-list": {
+		"wilting": "The plant and leaves are drooping. The leaves might look too heavy for the stems. The plant looks 'sad'.",
+		"strange-growth": "The plant may not have grown as tall as it should have, or have extra parts on it that shouldn't be there, or may not have grown right.",
+		"falling-over": "The plant is falling over at the base, but first make sure that the plant is properly supported if it is tall enough.",
+		"leaf-spots": "There are spots on the leaves. They can be many different colors, including brown, yellow, grey, white, or anything else.",
+		"curled-leaves": "placeholder",
+		"wilted-leaves": "placeholder",
+		"discolored-leaves": "placeholder",
+		"leaf-holes": "placeholder",
+		"hollow-stems": "placeholder",
+		"dark-spot-stem": "placeholder",
+		"stem-rot": "placeholder",
+		"chewed-stem": "placeholder",
+		"fruit-rots": "placeholder",
+		"fruit-holes": "placeholder",
+		"fruit-spots": "placeholder",
+		"discolored-fruit": "placeholder",
+		"fruit-cracks": "placeholder",
+		"distorted-fruit": "placeholder",
+		"big-bugs": "Any bugs at or above one inch that are on your plants.",
+		"small-bugs": "Any bugs below one inch that are on your plants."
+	},
+	"issues-list": [
+		[
+			"white-mold",
+			["wilting", "fruit-rots", "hollow-stems", "wilted-leaves", "dark-spot-stem", "stem-rot"],
+			[
+				"http://hort.uwex.edu/articles/white-mold/",
+				"http://www.apsnet.org/edcenter/intropp/lessons/fungi/ascomycetes/Pages/WhiteMold.aspx",
+				"http://www.almanac.com/pest/white-mold",
+				"http://www.gardenguides.com/103506-white-mold-house-plants.html",
+				"http://www.wisegeek.org/what-is-white-mold.htm",
+				"http://fyi.uwex.edu/fieldcroppathology/disease-profile-sclerotinia-stem-rot-white-mold/"
+			]
+		],
+		[
+			"verticillium-wilt",
+			["wilting", "leaf-spots", "wilted-leaves", "discolored-leaves"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/verticillium-wilt-of-tomatoes-and-potatoes/"]
+		],
+		[
+			"fusarium-wilt",
+			["wilting", "wilted-leaves"],
+			["https://extension.umd.edu/growit/fusarium-wilt-tomato-vegetables"]
+		],
+		[
+			"damping-off",
+			["wilting", "falling-over", "stem-rot"],
+			["http://www.extension.umn.edu/garden/yard-garden/diseases/damping-off/"]
+		],
+		[
+			"northern-root-knot-nematode",
+			["strange-growth"],
+			["http://www.apsnet.org/edcenter/intropp/lessons/Nematodes/Pages/RootknotNematode.aspx"]
+		],
+		[
+			"virus",
+			["strange-growth", "curled-leaves", "discolored-leaves", "fruit-spots", "discolored-fruit", "distorted-fruit"],
+			["http://vegetablemdonline.ppath.cornell.edu/factsheets/Viruses_Tomato.htm"]
+		],
+		[
+			"herbicide-damage",
+			["strange-growth", "curled-leaves"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/disorders-of-tomato/index.html#injury"]
+		],
+		[
+			"cutworms",
+			["falling-over", "leaf-holes", "chewed-stems", "fruit-holes"],
+			[]
+		],
+		[
+			"flea-beetles",
+			["leaf-spots", "leaf-holes"],
+			[]
+		],
+		[
+			"septoria-leaf-spot",
+			["leaf-spots"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/septoria-leaf-spot-of-tomato/"]
+		],
+		[
+			"early-blight",
+			["leaf-spots", "dark-spot-stem", "fruit-spots"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/early-blight-of-tomatoes-and-potatoes/"]
+		],
+		[
+			"bacterial-speck",
+			["leaf-spots", "fruit-spots"],
+			["http://blog-yard-garden-news.extension.umn.edu/2009/07/what-are-those-leaf-spots-on-my.html"]
+		],
+		[
+			"bacterial-spot",
+			["leaf-spots", "fruit-spots"],
+			["http://blog-yard-garden-news.extension.umn.edu/2009/07/what-are-those-leaf-spots-on-my.html"]
+		],
+		[
+			"late-blight",
+			["leaf-spots", "dark-spot-stem", "fruit-rots", "fruit-spots", "discolored-fruit"],
+			["http://www.extension.umn.edu/garden/fruit-vegetable/plant-diseases/late-blight-tomato/"]
+		],
+		[
+			"aphids",
+			["curled-leaves", "wilted-leaves", "small-bugs"],
+			[]
+		],
+		[
+			"leaf-roll",
+			["curled-leaves"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/disorders-of-tomato/index.html#leaf-roll"]
+		],
+		[
+			"stalk-borers",
+			["wilted-leaves", "hollow-stems"],
+			["http://www.extension.umn.edu/garden/insects/find/stalk-borers/"]
+		],
+		[
+			"cold-injury",
+			["wilted-leaves", "discolored-leaves", "fruit-rots", "discolored-fruit"],
+			[]
+		],
+		[
+			"sunscald",
+			["discolored-leaves", "fruit-spots", "discolored-fruit"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/disorders-of-tomato/index.html#sunscald"]
+		],
+		[
+			"slugs",
+			["leaf-holes", "fruit-holes"],
+			["http://www.extension.umn.edu/garden/insects/find/slugs/"]
+		],
+		[
+			"tomato-hornworms",
+			["leaf-leaves", "fruit-holes", "big-bugs"],
+			["http://www.extension.umn.edu/garden/insects/find/tomato-hornworms-in-home-gardens/"]
+		],
+		[
+			"anthracnose",
+			["fruit-rots", "fruit-spots"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/tomato-anthracnose/"]
+		],
+		[
+			"blossom-end-rot",
+			["fruit-rots", "fruit-spots", "distorted-fruit"],
+			["http://www.extension.umn.edu/garden/yard-garden/vegetables/disorders-of-tomato/index.html#rot"]
+		],
+		[
+			"alternaria-fruit-rot",
+			["fruit-rots"],
+			[]
+		],
+		[
+			"picnic-beetles",
+			["fruit-holes", "small-bugs"],
+			["http://www.extension.umn.edu/garden/insects/find/sap-beetles-in-home-gardens/"]
+		],
+		[
+			"corn-earworm",
+			["fruit-holes", "big-bugs"],
+			[]
+		],
+		[
+			"alternaria-fruit-rot",
+			["fruit-spots"],
+			[]
+		],
+		[
+			"whitefiles",
+			["small-bugs"],
+			[]
+		],
+		[
+			"lady-beetles",
+			["small-bugs"],
+			["http://www.extension.umn.edu/garden/insects/find/multicolored-asian-lady-beetles/"]
+		]
+	]
+}

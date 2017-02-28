@@ -1,0 +1,107 @@
+/*
+* STANDARDS
+*
+* width
+* height
+* min-width
+* min-height
+*
+* margin
+* padding
+*
+* background-color
+* color
+*
+* border
+*
+* font
+*/
+
+fieldset {
+	border: none;
+}
+
+.description > .symptom {
+	font-size: 125%;
+	color: black;
+	font-weight: normal;
+	margin: 5px;
+	display: inline;
+}
+
+.description {
+	line-height: 110%;
+	font-size: 90%;
+	color: #5b5b5b;
+	margin: 0;
+	display: inline;
+}
+
+/**********************************************************************************
+* This section makes the crossed out and bolded sections in the symptom selection *
+**********************************************************************************/
+
+form {
+	border: #000000 solid 1px;
+	padding: 0;
+	margin: 1vw;
+}
+
+ul#symptom-selector {
+	list-style-type: none;
+	padding: 0;
+	margin: 1vw;
+}
+
+ul#symptom-selector > li {
+	line-height: 50%;
+	display: inline;
+	width: 14vw;
+	min-width: 100px;
+	height: 9vw;
+	min-height: 100px;
+	overflow-y: auto;
+}
+
+.question-group {
+	width: inherit;
+	min-width: inherit;
+	display: inherit;
+	margin: 0.5vw;
+	padding: 0.25vw;
+	height: inherit;
+	min-height: inherit;
+	overflow-y: inherit;
+	border: #000000 solid 1px;
+}
+
+.answer-container {
+	text-align: center;
+}
+
+.question-group p {
+	display: inline-block;
+	padding-left: 1vw;
+}
+
+.answer:checked + .question {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.answer + .question {
+	color: #636363;
+	text-decoration: line-through;
+}
+
+input {
+	width: 1.5vw;
+	height: 1.5vw;
+}
+
+#submit {
+	width: 95%;
+	height: 5vh;
+	display: inline;
+	margin: 2.5%;
+}
