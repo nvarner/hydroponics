@@ -1,0 +1,22 @@
+{
+	"external-variables": {
+		"water_height": "sensors.water_height",
+		"container_height": "settings.container_height",
+		"container_volume": "settings.container_volume",
+		"optimal_water_volume": "settings.optimal_water_volume"
+	},
+	"local-variables": {
+		"percent_of_container_full": ["water_height / container_height", ["water_height", "container_height"]],
+		"water_volume": ["percent_of_container_full * container_volume", ["percent_of_container_full", "container_volume"]],
+		"optimal_volume_error": ["water_volume - optimal_water_volume", ["water_volume", "optimal_water_volume"]]
+	},
+	"table-values": [
+		"water_height",
+		"container_height",
+		"container_volume",
+		"optimal_water_volume",
+		"percent_of_container_full",
+		"water_volume",
+		"optimal_volume_error"
+	]
+}

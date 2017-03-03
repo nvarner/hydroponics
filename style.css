@@ -58,7 +58,7 @@ header, .header-title {
 	width: 25vw;
 	background-color: #000000;
 	color: #ffffff;
-	letter-spacing: 1.5vw;
+	letter-spacing: 1vw;
 	line-height: 15vh;
 	padding: 0;
 }
@@ -68,11 +68,39 @@ header, .header-title {
 	display: inline-block;
 	text-align: center;
 	padding: 0;
-	width: 74vw;
+	width: 70vw;
 }
 
 #navigation > li {
 	display: inline-block;
 	margin-left: 5vw;
 	margin-right: 5vw;
+}
+
+/********
+* Table *
+********/
+table {
+	width: 90%;
+	margin: auto;
+	margin-top: 5vh;
+	border-collapse: collapse;
+}
+
+tbody, tbody td {
+	border: 1px solid #dddddd;
+}
+
+td {
+	padding: 15px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+thead td {
+	background-color: #e5e5e5;
+	font-weight: bold;
+	border-bottom: 1px solid #000000; 
 }

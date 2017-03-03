@@ -1,7 +1,9 @@
 <?php
 
 function nice_text ($text) {
-	return ucwords(str_replace("-", " ", $text));
+	$text_fixed = ucwords(str_replace("-", " ", $text));
+	$text_fixed = ucwords(str_replace("_", " ", $text_fixed));
+	return $text_fixed;
 }
 
 function get_json ($url) {

@@ -1,0 +1,3 @@
+[submodule "eos"]
+	path = eos
+	url = https://github.com/jlawrence11/eos.git
