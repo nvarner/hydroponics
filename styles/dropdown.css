@@ -1,0 +1,19 @@
+/*******************************************************************************
+* DROPDOWN.CSS                                                                 *
+* Used with dropdown.js to create the effects.                                 *
+*******************************************************************************/
+.dropdown-button {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.dropdown-button-down {
+	background-image: url("/hydroponics/images/drop_down.svg");
+}
+
+.dropdown-button-up {
+	background-image: url("/hydroponics/images/drop_up.svg");
+}

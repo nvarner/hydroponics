@@ -1,0 +1,16 @@
+/*******************************************************************************
+* LEVELS                                                                       *
+* These rules determine the styles of each level of thing in Material Design   *
+* (material.io)                                                                *
+*******************************************************************************/
+.bar {
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	background-color: #f5f5f5;
+}
+
+.level-2 {
+	border: solid #e0e0e0 1px;
+	padding: 5px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+}

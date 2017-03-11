@@ -4,24 +4,16 @@
 html, body {
 	width: 100%;
 	min-height: 100%;
-	
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	color: rgba(0, 0, 0, 0.87);
-	background-color: #ffffff;
+	width: 90vw;
+	background-color: #fafafa;
 	height: 100%;
-}
-
-* {
-	font-family: Tahoma, Geneva, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: Century Gothic, sans-serif;
-	text-align: center;
+	margin: 5vw;
+	margin-bottom: 10px;
 }
 
 .hidden {
@@ -29,54 +21,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .centered {
-	text-align: center;
 	display: block;
-}
-
-a {
-	color: rgba(0, 0, 0, 0.54);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 /*********
 * Header *
 *********/
-header {
-	border-bottom: 1px solid #000000;
-}
-
 header, .header-title {
 	margin: 0;
 	height: 15vh;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+
+#header-placeholder {
+	height: 1.5vh;
 }
 
 .header-title {
 	display: inline-block;
 	width: 25vw;
-	background-color: #000000;
-	color: #ffffff;
-	letter-spacing: 1vw;
-	line-height: 15vh;
+	background-color: #212121;
 	padding: 0;
 }
 
-#navigation {
+#navigation, navigation {
 	list-style-type: none;
 	display: inline-block;
-	text-align: center;
+	margin: 0;
 	padding: 0;
-	width: 70vw;
+	width: 75vw;
+	height: 100%;
 }
 
-#navigation > li {
-	color: rgba(0, 0, 0.54);
+navigation {
+	margin-left: 25vw;
+}
+
+#navigation > li, #navigation a {
 	display: inline-block;
-	margin-left: 5vw;
-	margin-right: 5vw;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /********
@@ -103,19 +90,28 @@ tr:nth-child(even) {
 
 thead td {
 	background-color: #e5e5e5;
-	font-weight: bold;
-	border-bottom: 1px solid #000000; 
+	border-bottom: 1px solid #000000;
 }
 
-/************************
-* Paragraphs and .label *
-************************/
-.label {
-	font-weight: bold;
+/********
+* Lists *
+********/
+ul.nice {
+	list-style-type: none;
+	border-collapse: collapse;
 }
 
-p {
-	padding: 2vw;
+ol.nice {
+	border-collapse: collapse;
+}
+
+.nice li {
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	padding: 15px;
+}
+
+.nice li:nth-child(even) {
+	background-color: #f2f2f2;
 }
 
 .section {

@@ -4,20 +4,20 @@
 		"strange-growth": "The plant may not have grown as tall as it should have, or have extra parts on it that shouldn't be there, or may not have grown right.",
 		"falling-over": "The plant is falling over at the base, but first make sure that the plant is properly supported if it is tall enough.",
 		"leaf-spots": "There are spots on the leaves. They can be many different colors, including brown, yellow, grey, white, or anything else.",
-		"curled-leaves": "placeholder",
-		"wilted-leaves": "placeholder",
-		"discolored-leaves": "placeholder",
-		"leaf-holes": "placeholder",
-		"hollow-stems": "placeholder",
-		"dark-spot-stem": "placeholder",
-		"stem-rot": "placeholder",
-		"chewed-stem": "placeholder",
-		"fruit-rots": "placeholder",
-		"fruit-holes": "placeholder",
-		"fruit-spots": "placeholder",
-		"discolored-fruit": "placeholder",
-		"fruit-cracks": "placeholder",
-		"distorted-fruit": "placeholder",
+		"curled-leaves": "The plant's leaves are curled up. This can be in any direction.",
+		"wilted-leaves": "The leaves are drooping. They look 'sad'.",
+		"discolored-leaves": "The leaves aren't the right color. This could include leaves changing like it's fall... when it isn't (unless you're using a greenhouse that's like fall).",
+		"leaf-holes": "There are holes in the leaves.",
+		"hollow-stems": "The stems are hollow. There may be something other than stem inside them; it still counts.",
+		"dark-spot-stem": "There are dark spots on the stems.",
+		"stem-rot": "The stems are rotting.",
+		"chewed-stem": "The stems are chewed.",
+		"fruit-rots": "Fruit rots on the plant before it should.",
+		"fruit-holes": "There are holes in the fruit.",
+		"fruit-spots": "There are spots on the fruit.",
+		"discolored-fruit": "The fruit is not the color it should be. Make sure it's not just the color of young fruit if it's young.",
+		"fruit-cracks": "The fruit is cracking.",
+		"distorted-fruit": "The fruit doesn't look like it should look.",
 		"big-bugs": "Any bugs at or above one inch that are on your plants.",
 		"small-bugs": "Any bugs below one inch that are on your plants."
 	},
@@ -37,7 +37,12 @@
 		[
 			"verticillium-wilt",
 			["wilting", "leaf-spots", "wilted-leaves", "discolored-leaves"],
-			["http://www.extension.umn.edu/garden/yard-garden/vegetables/verticillium-wilt-of-tomatoes-and-potatoes/"]
+			[
+				"http://www.extension.umn.edu/garden/yard-garden/vegetables/verticillium-wilt-of-tomatoes-and-potatoes/",
+				"https://en.wikipedia.org/wiki/Verticillium_wilt",
+				"http://vegetablemdonline.ppath.cornell.edu/factsheets/Tomato_Verticillium.htm",
+				"http://www.tomatodirt.com/verticillium-wilt.html"
+			]
 		],
 		[
 			"fusarium-wilt",

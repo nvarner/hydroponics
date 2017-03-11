@@ -1,0 +1,102 @@
+/*******************************************************************************
+* TYPOGRAPHY                                                                   *
+* All font things are set here, including font-family, font-weight, font-size, *
+* font color, etc.                                                             *
+*******************************************************************************/
+* {
+	color: rgba(0, 0, 0, 0.87);
+	font-family: "Roboto", "Noto", "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+	/***************************************************************************
+	* HEADERS                                                                  *
+	* Style headers for Material Design. Font size, weight, etc.               *
+	***************************************************************************/
+	h1 {
+		font-weight: 300;
+		font-size: 70px;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 45px;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 34px;
+	}
+
+	h4, h5, h6 {
+		font-weight: normal;
+		font-size: 24px;
+	}
+
+	/***************************************************************************
+	* CLASS STYLES                                                             *
+	* Styles things to be bold, italic, underlines, etc.                       *
+	***************************************************************************/
+	.bold {
+		font-weight: bold;
+	}
+
+	.italic {
+		font-style: italic;
+	}
+
+	.underline {
+		text-decoration: underline;
+	}
+
+	.strikethrough {
+		text-decoration: line-through;
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	/***************************************************************************
+	* LINKS                                                                    *
+	* Styling links, hover links                                               *
+	***************************************************************************/
+	a {
+		text-decoration: none;
+		color: rgba(0, 0, 0, 0.54);
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	/***************************************************************************
+	* MISC                                                                     *
+	* Anything that doesn't really fit into another category goes here         *
+	***************************************************************************/
+	.header-title {
+		font-family: Century Gothic, sans-serif;
+		font-size: 300%;
+		text-align: center;
+		color: #ffffff;
+		letter-spacing: 1vw;
+		line-height: 15vh;
+	}
+
+	#navigation {
+		text-align: center;
+	}
+
+	#navigation > li, #navigation a {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 20px;
+		line-height: 15vh;
+	}
+
+	.button {
+		text-transform: uppercase;
+	}
+
+	thead td {
+		font-weight: bold;
+	}

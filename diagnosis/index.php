@@ -1,36 +1,31 @@
-<!doctype html>
-
-<html>
-	<head>
-		<title>Diagnosis</title>
-		
-		<link rel="stylesheet" href="../style.css" />
-		<link rel="stylesheet" href="style.css" />
-
-		
-		<script src="../jquery.js"></script>
-		<script src="../jquery.form.js"></script>
-		
+<?php
+$title = "Diagnosis"
+$extra_head = "<script src="enable_get.js"></script>" .
+"<script src="issue_type.js"></script>" .
+"<script src="issue.js"></script>" .
+"<script src="question.js"></script>" .
+"<script src="diagnose.js"></script>" .
+?>
 		<script src="enable_get.js"></script>
 		<script src="issue_type.js"></script>
 		<script src="issue.js"></script>
 		<script src="question.js"></script>
 		<script src="diagnose.js"></script>
 	</head>
-	
+
 	<body>
 		<?php
 		require_once("../functions.php");
-		
+
 		$plant_type = htmlspecialchars($_GET["plant-type"]);
 		$plant_file_path = "../plants/$plant_type";
 		$plant_file = fopen($plant_file_path, "r") or die("Unable to open the file at $plant_file_path."
 														  . "Try again and make sure the file exists!");
 		$plant_json = fread($plant_file, filesize($plant_file_path));
-		fclose($plant_file);				
+		fclose($plant_file);
 		$plant_object = json_decode($plant_json);
 		?>
-		
+
 		<h1>Plant Diagnosis</h1>
 
 		<form id="questions-form" action="get_results.php" method="get">
@@ -50,12 +45,12 @@
 				}
 				?>
 			</ul>
-			
+
 			<input id="submit" type="submit" value="Submit" />
 		</form>
 
 		<p id="response"></p>
-		
+
 		<div id="diagnosis" class="hidden">
 			<h2>Current Diagnosis:</h2><span class="result_0">None</span>
 
