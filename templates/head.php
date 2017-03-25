@@ -12,6 +12,7 @@
 		<script src="/hydroponics/jquery.js"></script>
 		<script src="/hydroponics/jquery-ui.min.js"></script>
 
+		<script src="/hydroponics/scripts/functions.js"></script>
 		<script src="/hydroponics/dropdown.js"></script>
 
 		<?php

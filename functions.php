@@ -6,11 +6,20 @@ function nice_text ($text) {
 	return $text_fixed;
 }
 
+function un_nice_text ($text, $char) {
+	$char = isSet($char) ? $char : "-";
+	$text_fixed = strtolower(str_replace(" ", $char, $text));
+}
+
 function get_json ($url) {
 	$file = fopen($url, "r") or die("Unable to open the JSON file at $url."
 													  . "Try again and make sure the file exists!");
 	$json = fread($file, filesize($url));
 	fclose($file);
+	return parse_json($json);
+}
+
+function parse_json ($json) {
 	$json_object = json_decode($json);
 
 	return $json_object;
