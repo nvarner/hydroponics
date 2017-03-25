@@ -6,6 +6,7 @@
 			<li><a href="/hydroponics/settings/" class="button">SETTINGS</a></li>
 			<li><a href="" class="button">CONTROL</a></li>
 			<li><a href="/hydroponics/plants" class="button">PLANTS</a></li>
+			<li><a href="/hydroponics/status" class="button">STATUS</a></li>
 		</ul>
 	</navigation>
 </header>

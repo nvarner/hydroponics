@@ -33,5 +33,4 @@ include("templates/head.php");
 		</ol>
 	</div>
 </body>
-
 <?php include("templates/foot.php"); ?>
