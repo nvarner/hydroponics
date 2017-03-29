@@ -25,6 +25,10 @@ function parse_json ($json) {
 	return $json_object;
 }
 
+function set_json ($url, $json) {
+	file_put_contents($url, json_encode($json));
+}
+
 function get_publisher ($url, $publisher_list_url) {
 	$publishers = get_json($publisher_list_url);
 

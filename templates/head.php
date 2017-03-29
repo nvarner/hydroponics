@@ -9,6 +9,9 @@
 		<link rel="stylesheet" href="/hydroponics/styles/dropdown.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/header.css" />
 
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 		<script src="/hydroponics/jquery.js"></script>
 		<script src="/hydroponics/jquery-ui.min.js"></script>
 
