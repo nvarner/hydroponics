@@ -57,10 +57,10 @@
 					echo "</td></tr>";
 				};
 				?>
-				<tr><td colspan="3" class="full-cell"><a class="small-button" id="save">Save</i></a></td></tr>
 			</tbody>
 		</table>
 
+		<a class="text-button" id="save">SAVE</a>
 
 	</form>
 </body>

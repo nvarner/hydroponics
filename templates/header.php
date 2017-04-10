@@ -4,8 +4,8 @@
 		<ul id="navigation" class="header-content">
 			<li><a href="/hydroponics/overview/" class="button">OVERVIEW</a></li>
 			<li><a href="/hydroponics/settings/" class="button">SETTINGS</a></li>
-			<li><a href="" class="button">CONTROL</a></li>
-			<li><a href="/hydroponics/plants" class="button">PLANTS</a></li>
+			<li><a href="/hydroponics/control/" class="button">CONTROL</a></li>
+			<li><a href="/hydroponics/plants/" class="button">PLANTS</a></li>
 		</ul>
 	</navigation>
 </header>

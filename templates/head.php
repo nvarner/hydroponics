@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/hydroponics/styles/levels.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/dropdown.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/header.css" />
+		<link rel="stylesheet" href="/hydroponics/styles/common-classes.css" />
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -17,6 +18,7 @@
 
 		<script src="/hydroponics/scripts/functions.js"></script>
 		<script src="/hydroponics/dropdown.js"></script>
+		<script src="/hydroponics/scripts/ink.js"></script>
 
 		<?php
 

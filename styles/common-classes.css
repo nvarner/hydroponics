@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * This makes content take up the whole of a table cell ny removing the        *
+ * padding from the cell                                                       *
+ ******************************************************************************/
+.full-cell {
+	padding: 0;
+}
+
+
+/*******************************************************************************
+ * These just float content over to the left or right, very simple             *
+ ******************************************************************************/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*******************************************************************************
+ * This creates a button made of text, using the ink effect                    *
+ ******************************************************************************/
+a.text-button {
+	text-transform: capitalize;
+	text-align: center;
+	padding: 5px;
+}
+
+.ink {
+	
+}
