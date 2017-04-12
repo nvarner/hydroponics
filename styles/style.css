@@ -24,48 +24,6 @@ body {
 	display: block;
 }
 
-/*********
-* Header *
-*********/
-header, .header-title {
-	margin: 0;
-	height: 15vh;
-	width: 100vw;
-	left: 0;
-	top: 0;
-	position: fixed;
-}
-
-#header-placeholder {
-	height: 1.5vh;
-}
-
-.header-title {
-	display: inline-block;
-	width: 25vw;
-	background-color: #212121;
-	padding: 0;
-}
-
-#navigation, navigation {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	width: 75vw;
-	height: 100%;
-}
-
-navigation {
-	margin-left: 25vw;
-}
-
-#navigation > li, #navigation a {
-	display: inline-block;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
 /********
 * Table *
 ********/

@@ -76,11 +76,11 @@
 	***************************************************************************/
 	.header-title {
 		font-family: Century Gothic, sans-serif;
-		font-size: 300%;
+		font-size: 34px;
 		text-align: center;
 		color: #ffffff;
 		letter-spacing: 1vw;
-		line-height: 15vh;
+		line-height: 7vh;
 	}
 
 	#navigation {
@@ -88,13 +88,13 @@
 	}
 
 	#navigation > li, #navigation a {
-		color: rgba(0, 0, 0, 0.54);
-		font-size: 20px;
-		line-height: 15vh;
+		color: rgba(255, 255, 255, 0.7);
+		line-height: 7vh;
 	}
 
 	.button {
 		text-transform: uppercase;
+		font-size: 14px;
 	}
 
 	thead td {
