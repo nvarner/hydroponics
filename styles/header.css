@@ -42,3 +42,23 @@ navigation {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
+#status {
+	color: rgba(0, 0, 0, 0.84);
+	padding: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.good {
+	background-color: #388e3c;
+}
+
+.alert {
+	background-color: #fbc02d;
+}
+
+.bad {
+	background-color: #d32f2f;
+}

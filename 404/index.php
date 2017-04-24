@@ -6,7 +6,6 @@ include("../templates/head.php");
 ?>
 
 <body>
-	<?php incl
 	<?php include("../templates/header.php"); ?>
 
 	<h1>404 Error, Whoops!</h1>

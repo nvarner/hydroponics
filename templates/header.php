@@ -8,5 +8,6 @@
 			<li><a href="/hydroponics/plants/" class="button">PLANTS</a></li>
 		</ul>
 	</navigation>
+	<div id="status" class="good">Good</div>
 </header>
 <div id="header-placeholder"></div>
