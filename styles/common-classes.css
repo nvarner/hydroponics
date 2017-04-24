@@ -6,6 +6,11 @@
 	padding: 0;
 }
 
+.full-size {
+	width: 100%;
+	margin: 0;
+}
+
 
 /*******************************************************************************
  * These just float content over to the left or right, very simple             *
@@ -28,5 +33,5 @@ a.text-button {
 }
 
 .ink {
-	
+
 }

@@ -3,7 +3,7 @@
 * All font things are set here, including font-family, font-weight, font-size, *
 * font color, etc.                                                             *
 *******************************************************************************/
-* {
+html {
 	color: rgba(0, 0, 0, 0.87);
 	font-family: "Roboto", "Noto", "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -63,7 +63,8 @@
 	***************************************************************************/
 	a {
 		text-decoration: none;
-		color: rgba(0, 0, 0, 0.54);
+		color: rgba(48, 79, 254, 0.54);
+		font-weight: bold;
 	}
 
 	a:hover {
@@ -74,6 +75,16 @@
 	* MISC                                                                     *
 	* Anything that doesn't really fit into another category goes here         *
 	***************************************************************************/
+	thead {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 12px;
+	}
+
+	tbody {
+		color: rgba(0, 0, 0, 0.87);
+		font-size: 13px;
+	}
+
 	.header-title {
 		font-family: Century Gothic, sans-serif;
 		font-size: 34px;
@@ -95,8 +106,4 @@
 	.button {
 		text-transform: uppercase;
 		font-size: 14px;
-	}
-
-	thead td {
-		font-weight: bold;
 	}
