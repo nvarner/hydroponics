@@ -89,6 +89,10 @@ ol.nice {
 /*
 Expand Panel
 */
+.expand-panel {
+	width: 100%;
+}
+
 .expand-panel-top {
 	padding-left: 24px;
 }
@@ -146,4 +150,22 @@ ul.list > li {
 	padding-left: 16px;
 	overflow: overlay;
 	display: table-row;
+}
+
+/*
+Photoalbum
+*/
+.photoalbum {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 33.33%;
+	height: 100%;
+	padding: 5px;
+}
+
+#save-container {
+	text-align: center;
+	padding: 15px;
 }

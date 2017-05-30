@@ -60,8 +60,14 @@
 			</tbody>
 		</table>
 
-		<a class="text-button" id="save">SAVE</a>
-
+		<div id="save-container">
+			<a class="mdc-button mdc-button--raised mdc-button--accent
+			mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill
+			mdc-ripple-upgraded--foreground-activation" id="save">Save</a>
+			<a class="mdc-button mdc-button--raised mdc-button--accent
+			mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill
+			mdc-ripple-upgraded--foreground-activation" id="save">Cancel</a>
+		</div>
 	</form>
 </body>
 

@@ -57,7 +57,7 @@ $plant_json = get_json("../$plant_type.json");
 			<p class="expand-panel-description">All of the issues that a plant may experience.</p>
 		</div>
 		<div class="expand-panel-content">
-			<ul class="list">
+			<ul class="mdc-list">
 				<?php
 
 				foreach ($plant_json->{"issues-list"} as $issue) {
@@ -66,7 +66,7 @@ $plant_json = get_json("../$plant_type.json");
 					$issue_symptoms = $issue[1];
 					$issue_resources = $issue[2];
 
-					echo "<li>";
+					echo "<li class='mdc-list-item'>";
 					echo "<div class='card full-cell expand-panel'>";
 
 						echo "<div class='expand-panel-top'>";

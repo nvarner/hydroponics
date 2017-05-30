@@ -3,35 +3,45 @@
 * All font things are set here, including font-family, font-weight, font-size, *
 * font color, etc.                                                             *
 *******************************************************************************/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(/hydroponics/styles/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 html {
 	color: rgba(0, 0, 0, 0.87);
 	font-family: "Roboto", "Noto", "Open Sans", "Droid Sans", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 }
-
-	/***************************************************************************
-	* HEADERS                                                                  *
-	* Style headers for Material Design. Font size, weight, etc.               *
-	***************************************************************************/
-	h1 {
-		font-weight: 300;
-		font-size: 70px;
-	}
-
-	h2 {
-		font-weight: normal;
-		font-size: 45px;
-	}
-
-	h3 {
-		font-weight: normal;
-		font-size: 34px;
-	}
-
-	h4, h5, h6 {
-		font-weight: normal;
-		font-size: 24px;
-	}
 
 	/***************************************************************************
 	* CLASS STYLES                                                             *
