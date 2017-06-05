@@ -1,0 +1,20 @@
+/*******************************************************************************
+* HEADERS                                                                      *
+* Creates the effect that elements under certain headers are aligned with them *
+* and others.                                                                  *
+*******************************************************************************/
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+}
+
+h2, h2 + * {
+	margin-left: 2vw;
+}
+
+h3, h3 + * {
+	margin-left: 4vw;
+}
+
+h4, h5, h6, h4 + *, h5 + *, h6 + * {
+	margin-left: 5vw;
+}

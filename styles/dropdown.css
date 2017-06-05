@@ -4,16 +4,17 @@
 *******************************************************************************/
 .dropdown-button {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
+	position: relative;
+	top: 13px;
+	float: right;
+	margin-right: 24px;
+	width: 24px;
+	height: 24px;
 	background-size: contain;
 	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.38);
 }
 
-.dropdown-button-down {
-	background-image: url("/hydroponics/images/drop_down.svg");
-}
-
-.dropdown-button-up {
-	background-image: url("/hydroponics/images/drop_up.svg");
+.dropdown-button:hover, .dropdown-button:active {
+	color: rgba(0, 0, 0, 0.54);
 }

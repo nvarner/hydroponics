@@ -1,16 +1,19 @@
-var test;
-
 $().ready(function () {
-	var headers = $("h2, h3, h4, h5, h6");
+	var expanders = $(".expand-panel");
+	//                 position after: expanding panel's first child
+	var expander_button_location = $(".expand-panel > *:nth-child(1) > *:nth-child(2)");
 
-	headers.prepend("<span class='dropdown-button dropdown-button-down'></span>");
+	expander_button_location.after(	"<i class='material-icons dropdown-button'>expand_more</i>");
 	var dropdown_buttons = $(".dropdown-button");
 
 	dropdown_buttons.on("click", function () {
-		$(this).toggleClass("dropdown-button-down");
-		$(this).toggleClass("dropdown-button-up");
+		if ($(this).text() == "expand_less") {
+			$(this).text("expand_more");
+		} else {
+			$(this).text("expand_less");
+		}
 		$(this).parent().next().toggle("blind", 200);
-
-		test = $(this);
 	});
+
+	dropdown_buttons.parent().next().toggle("blind", 200);
 });

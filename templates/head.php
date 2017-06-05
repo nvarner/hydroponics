@@ -7,28 +7,18 @@
 		<link rel="stylesheet" href="/hydroponics/styles/typography.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/levels.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/dropdown.css" />
+		<link rel="stylesheet" href="/hydroponics/styles/header-levels.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/header.css" />
 		<link rel="stylesheet" href="/hydroponics/styles/common-classes.css" />
-
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+		<link rel="stylesheet" href="/hydroponics/styles/material-design.css" />
+		<link rel="stylesheet" href="/hydroponics/node_modules/material-components-web/dist/material-components-web.css" />
 
 		<script src="/hydroponics/jquery.js"></script>
 		<script src="/hydroponics/jquery-ui.min.js"></script>
+		<script src="/hydroponics/node_modules/material-components-web/dist/material-components-web.js"></script>
 
 		<script src="/hydroponics/scripts/functions.js"></script>
 		<script src="/hydroponics/dropdown.js"></script>
 		<script src="/hydroponics/scripts/ink.js"></script>
-
-		<?php
-
-		if (isset($extra_head)) {
-			echo $extra_head;
-		}
-
-		?>
-
-		<?php
-		require_once(__DIR__ . "/../functions.php");
-		?>
+		<script src="/hydroponics/scripts/material-design.js"></script>
 	</head>

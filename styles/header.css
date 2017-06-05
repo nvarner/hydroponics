@@ -1,21 +1,69 @@
-/*******************************************************************************
-* HEADERS                                                                      *
-* Creates the effect that elements under certain headers are aligned with them *
-* and others.                                                                  *
-*******************************************************************************/
-h1, h2, h3, h4, h5, h6 {
-	margin-top: 20px;
-	margin-bottom: 0;
+/*********
+* Header *
+*********/
+header, .header-title {
+	margin: 0;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	position: fixed;
 }
 
-h2, h2 + * {
-	margin-left: 2vw;
+header {
+	z-index: 5;
+	height: 74px;
 }
 
-h3, h3 + * {
-	margin-left: 4vw;
+.header-title {
+	display: inline-block;
+	width: 25vw;
+	background-color: #003300;
+	padding: 0;
+	height: 50px;
 }
 
-h4, h5, h6, h4 + *, h5 + *, h6 + * {
-	margin-left: 5vw;
+#navigation, navigation {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 75vw;
+	height: 50px;
+}
+
+navigation {
+	margin-left: 25vw;
+	background-color: #003300;
+}
+
+#navigation > li, #navigation a {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#placeholder {
+	height: 50px;
+}
+
+#status {
+	color: rgba(0, 0, 0, 0.84);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	z-index: 10;
+}
+
+.good {
+	background-color: #388e3c;
+}
+
+.alert {
+	background-color: #fbc02d;
+}
+
+.bad {
+	background-color: #d32f2f;
 }
