@@ -3,54 +3,38 @@
 <body>
 	<?php include("../templates/header.php"); ?>
 
-	<table class="level-2">
+	<table class="md-table">
 		<thead>
 			<tr>
 				<td>Name</td>
 				<td>Value</td>
+				<td>Units</td>
 			</tr>
 		</thead>
 		<tbody>
 
 			<?php
 
-			require_once("../functions.php");
 			require_once("../eos/src/Stack.php");
 			require_once("../eos/src/Math.php");
 			require_once("../eos/src/AdvancedFunctions.php");
 			require_once("../eos/src/Parser.php");
 			use jlawrence\eos\Parser;
 
-			function get_value($variable, $overview_object, $variable_map) {
-				$variable_value = 0;
+			$display_data = get_json("../data/overview.json");
+			$external_variable_names = get_object_vars($display_data->{"external-variables"});
 
-				if (strpos($variable, ".")) {
-					$filename = substr($variable, 0, strpos($variable, "."));
-					$object = get_json("../data/$filename.json");
+			foreach ($external_variable_names as $variable_name => $variable_value) {
+				$dot_location = strpos($variable_value, ".");
 
-					$variable_value = $object->{substr($variable, strpos($variable, ".") + 1, strlen($variable))};
+				// Check for the period to indicate correct notation
+				if (strpos($dot_location) == true) {
+					$variable_location = substr($variable_value, 0, strpos($variable_value, "."));
+					$variable_location_object = get_json("../data/$variable_location.json");
+
+					$variable_value = $variable_location_object->{substr($variable_value, strpos($variable_value, ".") + 1, strlen($variable_value))};
 				} else {
-					$variable_value = $variable_map[$overview_object->{$variable}[0]];
-				}
-
-				return $variable_value;
-			}
-
-			$overview_object = get_json("../data/overview.json");
-
-			/*************************
-			* Get external variables *
-			*************************/
-			$variables = array();
-
-			foreach (get_object_vars($overview_object->{"external-variables"}) as $variable_name => $variable_location) {
-				if (strpos($variable_location, ".")) {
-					$filename = substr($variable_location, 0, strpos($variable_location, "."));
-					$object = get_json("../data/$filename.json");
-
-					$variable_value = $object->{substr($variable_location, strpos($variable_location, ".") + 1, strlen($variable_location))};
-				} else {
-					die("External variables need to be in the form of location.name!");
+					die("External variables need to be in the form of location.name");
 				}
 
 				$variable_name_clean = str_replace("_", "", $variable_name);
@@ -61,7 +45,7 @@
 			/**********************
 			* Set local variables *
 			**********************/
-			foreach (get_object_vars($overview_object->{"local-variables"}) as $variable_name => $variable_calculations) {
+			foreach (get_object_vars($display_data->{"local-variables"}) as $variable_name => $variable_calculations) {
 				$dependant_variables = array();
 
 				foreach ($variable_calculations[1] as $dependant_variable) {
@@ -80,18 +64,51 @@
 			/***********************
 			* Display table values *
 			***********************/
-			foreach ($overview_object->{"table-values"} as $value) {
+			foreach ($display_data->{"table-values"} as $value) {
 				$value_clean = str_replace("_", "", $value);
+
+				$unit = "units";
+				preg_match_all(
+					"/(length|width|height|distance|volume|weight|mass)/",
+					strtolower($value),
+					$unit_possibilities
+				);
+
+				if (sizeof($unit_possibilities[0]) == 0) {
+					$unit = "units";
+				} else {
+					switch ($unit_possibilities[0][0]) {
+						case "length":
+						case "width":
+						case "height":
+						case "distance":
+							$unit = "m";
+							break;
+						case "weight":
+						case "mass":
+							$unit = "kg";
+							break;
+						case "volume":
+							$unit = "m^3";
+							break;
+						default:
+							$unit = "units";
+							break;
+					}
+				}
 
 				echo "<tr><td>";
 				echo nice_text($value);
 				echo "</td><td>";
 				echo $variables[$value_clean];
+				echo "</td><td>";
+				echo $unit;
 				echo "</td></tr>";
 			};
 			?>
 		</tbody>
 	</table>
+	<?php
+	include("../templates/foot.php");
+	?>
 </body>
-
-<?php include("../templates/foot.php"); ?>

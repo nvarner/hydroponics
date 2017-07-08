@@ -1,9 +1,13 @@
-<?php $title="Settings"; $extra_head="<script src='/hydroponics/scripts/settings.js'></script>"; include("../templates/head.php"); ?>
+<?php
+$title="Settings";
+$extra_head="<script src='/hydroponics/scripts/settings.js'></script>";
+include("../templates/head.php");
+?>
 
 <body>
 	<?php include("../templates/header.php"); ?>
 	<form>
-		<table class="level-2">
+		<table class="md-table">
 			<thead>
 				<tr>
 					<td>Name</td>
@@ -49,11 +53,11 @@
 					}
 
 					echo "<tr><td>";
-					echo nice_text($setting_name);
-					echo "</td><td contenteditable='true'>";
-					echo $setting_value;
+						echo nice_text($setting_name);
+					echo "</td><td class='md-editable'>";
+						echo $setting_value;
 					echo "</td><td>";
-					echo $unit;
+						echo $unit;
 					echo "</td></tr>";
 				};
 				?>
@@ -61,12 +65,8 @@
 		</table>
 
 		<div id="save-container">
-			<a class="mdc-button mdc-button--raised mdc-button--accent
-			mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill
-			mdc-ripple-upgraded--foreground-activation" id="save">Save</a>
-			<a class="mdc-button mdc-button--raised mdc-button--accent
-			mdc-ripple-upgraded mdc-ripple-upgraded--background-active-fill
-			mdc-ripple-upgraded--foreground-activation" id="save">Cancel</a>
+			<a class="md-button md-button-raised" id="save">Save</a>
+			<a class="md-button md-button-raised" id="cancel">Cancel</a>
 		</div>
 	</form>
 </body>

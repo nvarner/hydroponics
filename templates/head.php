@@ -1,3 +1,8 @@
+<?php
+set_include_path("/var/www/html/hydroponics");
+include_once('functions.php');
+?>
+
 <!doctype html>
 
 <html>
@@ -21,4 +26,5 @@
 		<script src="/hydroponics/dropdown.js"></script>
 		<script src="/hydroponics/scripts/ink.js"></script>
 		<script src="/hydroponics/scripts/material-design.js"></script>
+		<?php if (isset($extra_head)) {echo $extra_head;} ?>
 	</head>

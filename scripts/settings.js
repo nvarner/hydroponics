@@ -17,13 +17,13 @@ $().ready(function () {
 			type: "POST",
 			dataType: "json",
 			url: "/hydroponics/settings/save.php",
-			data: changed,
-			success: function (data) {
-				// alert("Sucess: " + data);
-			},
-			error: function (jqXHR, textStatus) {
-				// alert("Error: " + textStatus + jqXHR.responseText);
-			}
+			data: changed//,
+			// success: function (data) {
+			// 	alert("Sucess: " + data);
+			// },
+			// error: function (jqXHR, textStatus) {
+			// 	alert("Error: " + textStatus + jqXHR.responseText);
+			// }
 		});
 		changed = {};
 	})
