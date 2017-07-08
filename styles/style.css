@@ -12,7 +12,7 @@ body {
 	width: 90vw;
 	background-color: #fafafa;
 	height: 100%;
-	margin: 5vw;
+	margin-top: 70px;
 	margin-bottom: 10px;
 }
 
@@ -22,42 +22,6 @@ body {
 
 .centered {
 	display: block;
-}
-
-/********
-* Table *
-********/
-table {
-	width: 100%;
-	border-collapse: collapse;
-	background-color: #FFFFFF;
-}
-
-table tr {
-	height: 48px;
-}
-
-tbody tr {
-    border-top: 1px solid #dddddd;
-}
-
-thead tr {
-	height: 56px;
-}
-
-tr:hover {
-	background-color: #eeeeee;
-}
-
-table td {
-	padding-left: 24px;
-	padding-right: 14px;
-}
-
-.table-name {
-	font-size: 20px;
-	color: rgba(0, 0, 0, 0.84);
-	height: 64px;
 }
 
 /********

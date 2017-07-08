@@ -1,5 +1,6 @@
 :root {
 	--md-main-color: rgba(27, 94, 32, 1);
+	--md-text-on-secondary: rgba(255, 255, 255, 1);
 	--md-secondary-color: rgba(48, 79, 254, 1);
 	--md-secondary-color-text: rgba(48, 79, 254, 0.84);
 }
@@ -113,4 +114,55 @@ header.md-toolbar > h1, .md-toolbar > h1 {
 	position: static;
 	display: flex;
 	align-items: flex-end;
+}
+
+.md-button {
+	line-height: 24px;
+	height: 24px;
+	padding: 6px;
+	border-radius: 2px;
+	font-size: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.md-button-raised {
+	background-color: var(--md-secondary-color);
+	color: var(--md-text-on-secondary);
+}
+
+table.md-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+
+table.md-table tr {
+	height: 48px;
+}
+
+table.md-table > tbody > tr {
+    border-top: 1px solid #dddddd;
+}
+
+table.md-table > thead > tr {
+	height: 56px;
+}
+
+table.md-table tr:hover {
+	background-color: #eeeeee;
+}
+
+table.md-table td {
+	padding-left: 24px;
+	padding-right: 14px;
+}
+
+.md-table-name {
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.84);
+	height: 64px;
 }
