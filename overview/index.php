@@ -21,16 +21,16 @@
 			require_once("../eos/src/Parser.php");
 			use jlawrence\eos\Parser;
 
-			$display_data = get_json("../data/overview.json");
+			$display_data = json_ops::get("../data/overview.json");
 			$external_variable_names = get_object_vars($display_data->{"external-variables"});
 
 			foreach ($external_variable_names as $variable_name => $variable_value) {
 				$dot_location = strpos($variable_value, ".");
 
 				// Check for the period to indicate correct notation
-				if (strpos($dot_location) == true) {
+				if ($dot_location !== false) {
 					$variable_location = substr($variable_value, 0, strpos($variable_value, "."));
-					$variable_location_object = get_json("../data/$variable_location.json");
+					$variable_location_object = json_ops::get("../data/$variable_location.json");
 
 					$variable_value = $variable_location_object->{substr($variable_value, strpos($variable_value, ".") + 1, strlen($variable_value))};
 				} else {
@@ -39,7 +39,7 @@
 
 				$variable_name_clean = str_replace("_", "", $variable_name);
 
-				$variables = array_merge($variables, array($variable_name_clean => $variable_value));
+				$variables = array($variable_name_clean => $variable_value);
 			};
 
 			/**********************

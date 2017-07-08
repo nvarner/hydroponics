@@ -1,6 +1,6 @@
 <?php
 set_include_path("/var/www/html/hydroponics");
-include_once('functions.php');
+include_once("helper.php");
 ?>
 
 <!doctype html>
