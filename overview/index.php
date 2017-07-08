@@ -28,7 +28,7 @@
 				$dot_location = strpos($variable_value, ".");
 
 				// Check for the period to indicate correct notation
-				if (strpos($dot_location) == true) {
+				if (strpos($dot_location) === true) {
 					$variable_location = substr($variable_value, 0, strpos($variable_value, "."));
 					$variable_location_object = get_json("../data/$variable_location.json");
 
