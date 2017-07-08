@@ -18,11 +18,11 @@ include("../templates/head.php");
 		<tbody>
 			<?php
 
-			foreach (get_json("plants.json") as $plant) {
+			foreach (json_ops::get("plants.json") as $plant) {
 				echo "<tr><td>";
-				echo "<a href='info?plant-type=$plant'>" . nice_text($plant) . "</a>";
+				echo "<a href='info?plant-type=$plant'>" . text_transform::nice($plant) . "</a>";
 				echo "</td><td>";
-				echo get_json("$plant.json")->{"description"};
+				echo json_ops::get("$plant.json")->{"description"};
 				echo "</td></tr>";
 			}
 

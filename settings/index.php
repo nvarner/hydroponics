@@ -19,7 +19,7 @@ include("../templates/head.php");
 
 				<?php
 
-				$settings_object = get_json("../data/settings.json");
+				$settings_object = json_ops::get("../data/settings.json");
 
 				/***********************
 				* Display table values *
@@ -53,7 +53,7 @@ include("../templates/head.php");
 					}
 
 					echo "<tr><td>";
-						echo nice_text($setting_name);
+						echo text_transform::nice($setting_name);
 					echo "</td><td class='md-editable'>";
 						echo $setting_value;
 					echo "</td><td>";

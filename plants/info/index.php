@@ -11,9 +11,9 @@ if (isset($_GET["plant-type"])) {
 $title = "Plant Info";
 include("../../templates/head.php");
 
-$plant_type_nice = nice_text($plant_type);
+$plant_type_nice = text_transform::nice($plant_type);
 
-$plant_json = get_json("../$plant_type.json");
+$plant_json = json_ops::get("../$plant_type.json");
 
 ?>
 
@@ -41,7 +41,7 @@ $plant_json = get_json("../$plant_type.json");
 
 					foreach ($plant_json->{"symptoms-list"} as$symptom_key => $symptom_value) {
 						echo "<tr>";
-						echo "<td>" . nice_text($symptom_key) . "</td><td>$symptom_value</td>";
+						echo "<td>" . text_transform::nice($symptom_key) . "</td><td>$symptom_value</td>";
 						echo "</tr>";
 					}
 
@@ -62,7 +62,7 @@ $plant_json = get_json("../$plant_type.json");
 
 				foreach ($plant_json->{"issues-list"} as $issue) {
 					$issue_unnice = $issue[0];
-					$issue_name = nice_text($issue[0]);
+					$issue_name = text_transform::nice($issue[0]);
 					$issue_symptoms = $issue[1];
 					$issue_resources = $issue[2];
 
@@ -77,7 +77,7 @@ $plant_json = get_json("../$plant_type.json");
 						echo "<div class='expand-panel-content'>";
 						echo "<ul>";
 						foreach ($issue_symptoms as $symptom) {
-							echo "<li>" . nice_text($symptom) . "</li>";
+							echo "<li>" . text_transform::nice($symptom) . "</li>";
 						}
 						echo "</ul>";
 						echo "</div>";
